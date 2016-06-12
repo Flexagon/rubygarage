@@ -99,4 +99,9 @@ body {
 ul, li {
   list-style: none;
 }
+a {
+  &:hover, &:focus {
+    outline: none !important;
+  }
+}
 /***** /Global styles *****/
