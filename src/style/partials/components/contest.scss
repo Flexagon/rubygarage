@@ -1,0 +1,52 @@
+/***** contest styles *****/
+.contest {
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  p {margin: 0;}
+  a {
+    @include inline-block;
+  }
+}
+.contest-btn-block {
+  margin: 28px auto 105px;
+}
+
+.custom-btn {
+  font-size: 16px;
+  display: block;
+  max-width: 270px;
+  text-transform: uppercase;
+  padding: 14px 42px;
+  background: $button-normal;
+  box-shadow: $button-shadow-normal;
+  border-radius: 5px 4px 4px 5px;
+  color: $body-txt;
+  @include transition-button;
+  &:hover {
+    color: $body-txt;
+    text-decoration: none;
+    background: $button-hover-focus;
+    @include transition-button;
+  }
+  &:focus {
+    color: $body-txt;
+    text-decoration: none;
+    box-shadow: $button-shadow-focus;
+    @include transition-button;
+  }
+}
+.contest-btn-link {
+  margin-left: 25px;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: $body-txt;
+  &:hover {
+    text-decoration: none;
+    color: $body-txt;
+  }
+}
+/***** /contest styles *****/

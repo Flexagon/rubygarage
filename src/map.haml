@@ -1,0 +1,226 @@
+!!!5
+%html
+  %head{lang: "en"}
+    %title Homepage ITINERARY
+  	%meta{charset: "UTF-8"}
+    %meta{name:"viewport", content:"width=device-width, initial-scale=1.0"}
+    %link{href: "css/main.css", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:400,300,700", rel: "stylesheet", type: "text/css"}
+    %link{href:"//db.onlinewebfonts.com/c/70e804141bfc8b876d402e7997fea74f?family=festus!", rel:"stylesheet", type:"text/css"}
+  %body.sidebar-close
+
+    <!-- menu -->
+    %nav.sidebar
+      .logo-menu
+        %a{href:"index.html"}
+          %img{src:"img/logo.png"}
+      %ul.sidebar-list
+        %li.sidebar-item
+          %a.sidebar-link.sidebar-link_boing{href:"#"} Itineraries
+        %li.sidebar-item
+          %a.sidebar-link.sidebar-link_sert{href:"#"} Contests
+        %li.sidebar-item.sidebar-item_john
+          %img{src:"img/john-kennedy.png"}
+          %span.sidebar-link John Kennedy
+          %ul.login-list
+            %li.login-item
+              %a.login-link.login-link_boing{href:"#"} My itineraries
+            %li.login-item
+              %a.login-link.login-link_sert{href:"#"} My contests
+            %li.login-item
+              %a.login-link.login-link_set{href:"#"} Settings
+            %li.login-item
+              %a.login-link.login-link_pay{href:"#"} Payments
+            %li.login-item
+              %a.login-link.login-link_log{href:"#"} Log out
+        %li.sidebar-item
+          %a.sidebar-link.sidebar-link_messages{href:"#"} Messages
+          %span.count-mail 13
+        %ul.mail-list
+          %li.mail-list-item
+            %ul
+              %h4 Contest
+              %li
+                %a.mail-list-link{href:"a"} Weekend in Verona from Trento
+                  %span +1
+              %li
+                %a.mail-list-link{href:"a"} The journey to the Old World – Prague, Czech Republic
+                  %span +2
+              %li
+                %a.mail-list-link{href:"a"} Weekend in Verona from Trento
+          %li.mail-list-item
+            %ul
+              %h4 Itineraries
+              %li
+                %a.mail-list-link{href:"a"} Italian Masterpiece
+                  %span +1
+              %li
+                %a.mail-list-link{href:"a"} Romantic journey to Northern Italy
+                  %span +2
+              %li
+                %a.mail-list-link{href:"a"} Weekend in Verona from Trento
+              %li
+                %a.mail-list-link{href:"a"} The journey to the Old World – Prague, Czech Republic
+    <!-- /menu -->
+
+    <!-- button-opener -->
+    .button-menu
+      %a.navblock-sidemenu.sidebar-trigger{href:"#"}
+        %span.navblock-sidemenu-item
+    <!-- /button-opener -->
+
+    <!-- header -->
+    %header.clearfix.st-content
+      .navblock.left-pos
+
+        .navblock-links
+          %a.navblock-links-item.navblock-links-item_glass{href:"index.html"}
+            %span
+            Overview
+          %a.navblock-links-item.navblock-links-item_map.active{href:"map.html"}
+            %span
+            Details
+      .share-links.right-pos
+        %span Share this itinerary:
+        %a.share-links-item.share-links-item_fb{href:"#"}
+        %a.share-links-item.share-links-item_tw{href:"#"}
+    <!-- /header -->
+
+    <!-- content -->
+    .map-block.head-margin
+      .map-sidebar
+        %button.handle
+          %span
+        .map-sidebar-box.container
+          .map-sidebar-tabs{data-tabs-buttons:"first"}
+            .tabs-buttons.active
+              %span.map-sidebar-tabs-item Jun 24
+            .tabs-buttons
+              %span.map-sidebar-tabs-item Jun 25
+            .tabs-buttons
+              %span.map-sidebar-tabs-item Jun 26
+          .tabs-content{data-tabs-panels:"first"}
+            .tabs-content-box.active
+              %ul.travel-plan-list.skinPlank
+                %li.travel-plan-item.sidebar__item
+                  %a.travel-plan-link.clearfix{href:"#"}
+                    %span.travel-time.travel-time_food Trattoria Da Ropeton
+                      %span.right-pos 10.00
+                    %span.travel-info Via Fontana del Ferro, 1, Verona, Italy
+                  %ul.travel-plan-dropdown
+                    %img{src:"img/food-img.png"}
+                    %p Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                %li.travel-plan-checkpoint
+                  %span.dark-car
+                %li.travel-plan-item.sidebar__item
+                  %a.travel-plan-link.clearfix{href:"#"}
+                    %span.travel-time.travel-time_cart Trattoria Da Ropeton
+                      %span.right-pos 12.00
+                    %span.travel-info Via Fontana del Ferro, 1, Verona, Italy
+                  %ul.travel-plan-dropdown
+                    %img{src:"img/food-img.png"}
+                    %p Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                %li.travel-plan-checkpoint
+                  %span.dark-bus
+                %li.travel-plan-item.sidebar__item
+                  %a.travel-plan-link.clearfix{href:"#"}
+                    %span.travel-time.travel-time_cart Trattoria Da Ropeton
+                      %span.right-pos 14.00
+                    %span.travel-info Via Fontana del Ferro, 1, Verona, Italy
+                  %ul.travel-plan-dropdown
+                    %img{src:"img/food-img.png"}
+                    %p Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+            .tabs-content-box
+              %ul.travel-plan-list.skinPlank
+                %li.travel-plan-item.sidebar__item
+                  %a.travel-plan-link.clearfix{href:"#"}
+                    %span.travel-time.travel-time_food Trattoria Da Ropeton 2
+                      %span.right-pos 10.00
+                    %span.travel-info Via Fontana del Ferro, 1, Verona, Italy
+                  %ul.travel-plan-dropdown
+                    %img{src:"img/food-img.png"}
+                    %p Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                %li.travel-plan-checkpoint
+                  %span.dark-car
+                %li.travel-plan-item.sidebar__item
+                  %a.travel-plan-link.clearfix{href:"#"}
+                    %span.travel-time.travel-time_cart Trattoria Da Ropeton
+                      %span.right-pos 12.00
+                    %span.travel-info Via Fontana del Ferro, 1, Verona, Italy
+                  %ul.travel-plan-dropdown
+                    %img{src:"img/food-img.png"}
+                    %p Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                %li.travel-plan-checkpoint
+                  %span.dark-bus
+                %li.travel-plan-item.sidebar__item
+                  %a.travel-plan-link.clearfix{href:"#"}
+                    %span.travel-time.travel-time_cart Trattoria Da Ropeton
+                      %span.right-pos 14.00
+                    %span.travel-info Via Fontana del Ferro, 1, Verona, Italy
+                  %ul.travel-plan-dropdown
+                    %img{src:"img/food-img.png"}
+                    %p Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+            .tabs-content-box
+              %ul.travel-plan-list.skinPlank
+                %li.travel-plan-item.sidebar__item
+                  %a.travel-plan-link.clearfix{href:"#"}
+                    %span.travel-time.travel-time_food Trattoria Da Ropeton 3
+                      %span.right-pos 10.00
+                    %span.travel-info Via Fontana del Ferro, 1, Verona, Italy
+                  %ul.travel-plan-dropdown
+                    %img{src:"img/food-img.png"}
+                    %p Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                %li.travel-plan-checkpoint
+                  %span.dark-car
+                %li.travel-plan-item.sidebar__item
+                  %a.travel-plan-link.clearfix{href:"#"}
+                    %span.travel-time.travel-time_cart Trattoria Da Ropeton
+                      %span.right-pos 12.00
+                    %span.travel-info Via Fontana del Ferro, 1, Verona, Italy
+                  %ul.travel-plan-dropdown
+                    %img{src:"img/food-img.png"}
+                    %p Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+                %li.travel-plan-checkpoint
+                  %span.dark-bus
+                %li.travel-plan-item.sidebar__item
+                  %a.travel-plan-link.clearfix{href:"#"}
+                    %span.travel-time.travel-time_cart Trattoria Da Ropeton
+                      %span.right-pos 14.00
+                    %span.travel-info Via Fontana del Ferro, 1, Verona, Italy
+                  %ul.travel-plan-dropdown
+                    %img{src:"img/food-img.png"}
+                    %p Amazing owner who sings and serves the food himself! Experience which you'll never forget and will include to the travel different mockups :)
+    .mark-info
+      .mark-map
+        %span
+      .mark-info-box
+        .travel-info-title Trattoria Da Ropeton
+          %span.travel-info-ptitle Via Fontana del Ferro, 1, Verona, Italy
+        .travel-info-phone +390458030040
+        .travel-info-link trattoriadaropeton.it‎
+    <!-- /content -->
+
+    <!-- footer -->
+    %footer
+      .footer-block-links
+        %a.footer-block-links-item{href:"index.html"} Home
+        %a.footer-block-links-item{href:"#"} Itenaries
+        %a.footer-block-links-item{href:"#"} About
+      .footer-block-logo
+        %a.footer-logo-item{href:"index.html"}
+      .footer-share-links
+        %a.footer-share-links-item.share-links-item_fb{href:"#"}
+        %a.footer-share-links-item.share-links-item_tw{href:"#"}
+        %span (c) Wanderist 2014
+    <!-- /footer -->
+
+    .overlay
+    <!-- scripts -->
+    %script{src:"https://code.jquery.com/jquery-2.2.0.min.js"}
+    %script{src:"js/owl.carousel.min.js"}
+    %script{src:"js/main.js"}
+    :javascript
+      $(function(){  $('.map-sidebar').tabSlideOut({	tabHandle: '.handle',	imageHeight: '40px',	imageWidth: '40px',	tabLocation: 'left',	speed: 400,	action: 'click',	topPos: '57px', fixedPosition: false }); });
+    :javascript
+      $('.owl-carousel').owlCarousel({ loop:true, margin:10, items:3, nav: true });
+    <!-- /scripts -->

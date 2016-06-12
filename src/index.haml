@@ -1,0 +1,287 @@
+!!!5
+%html
+  %head{lang: "en"}
+    %title Homepage ITINERARY
+  	%meta{charset: "UTF-8"}
+    %meta{name:"viewport", content:"width=device-width, initial-scale=1.0"}
+    %link{href: "css/main.css", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans:400,300,700", rel: "stylesheet", type: "text/css"}
+    %link{href:"//db.onlinewebfonts.com/c/70e804141bfc8b876d402e7997fea74f?family=festus!", rel:"stylesheet", type:"text/css"}
+  %body.sidebar-close
+
+    <!-- menu -->
+    %nav.sidebar
+      .logo-menu
+        %a{href:"index.html"}
+          %img{src:"img/logo.png"}
+      %ul.sidebar-list
+        %li.sidebar-item
+          %a.sidebar-link.sidebar-link_boing{href:"#"} Itineraries
+        %li.sidebar-item
+          %a.sidebar-link.sidebar-link_sert{href:"#"} Contests
+        %li.sidebar-item.sidebar-item_john
+          %img{src:"img/john-kennedy.png"}
+          %span.sidebar-link John Kennedy
+          %ul.login-list
+            %li.login-item
+              %a.login-link.login-link_boing{href:"#"} My itineraries
+            %li.login-item
+              %a.login-link.login-link_sert{href:"#"} My contests
+            %li.login-item
+              %a.login-link.login-link_set{href:"#"} Settings
+            %li.login-item
+              %a.login-link.login-link_pay{href:"#"} Payments
+            %li.login-item
+              %a.login-link.login-link_log{href:"#"} Log out
+        %li.sidebar-item
+          %a.sidebar-link.sidebar-link_messages{href:"#"} Messages
+          %span.count-mail 13
+        %ul.mail-list
+          %li.mail-list-item
+            %ul
+              %h4 Contest
+              %li
+                %a.mail-list-link{href:"a"} Weekend in Verona from Trento
+                  %span +1
+              %li
+                %a.mail-list-link{href:"a"} The journey to the Old World – Prague, Czech Republic
+                  %span +2
+              %li
+                %a.mail-list-link{href:"a"} Weekend in Verona from Trento
+          %li.mail-list-item
+            %ul
+              %h4 Itineraries
+              %li
+                %a.mail-list-link{href:"a"} Italian Masterpiece
+                  %span +1
+              %li
+                %a.mail-list-link{href:"a"} Romantic journey to Northern Italy
+                  %span +2
+              %li
+                %a.mail-list-link{href:"a"} Weekend in Verona from Trento
+              %li
+                %a.mail-list-link{href:"a"} The journey to the Old World – Prague, Czech Republic
+    <!-- /menu -->
+
+    <!-- button-opener -->
+    .button-menu
+      %a.navblock-sidemenu.sidebar-trigger{href:"#"}
+        %span.navblock-sidemenu-item
+    <!-- /button-opener -->
+
+    <!-- header -->
+    %header.clearfix.st-content
+      .navblock.left-pos
+
+        .navblock-links
+          %a.navblock-links-item.navblock-links-item_glass.active{href:"index.html"}
+            %span
+            Overview
+          %a.navblock-links-item.navblock-links-item_map{href:"map.html"}
+            %span
+            Details
+      .share-links.right-pos
+        %span Share this itinerary:
+        %a.share-links-item.share-links-item_fb{href:"#"}
+        %a.share-links-item.share-links-item_tw{href:"#"}
+    <!-- /header -->
+
+    <!-- post-header -->
+    .gallery.head-top
+      .container.clearfix
+        .share-links.right-pos
+          %span Share this itinerary:
+          %a.share-links-item.share-links-item_fb{href:"#"}
+          %a.share-links-item.share-links-item_tw{href:"#"}
+        .header-gallery-block
+          %span.itinerary ITINERARY
+          %h1 Trip to Fabulous Las Vegas
+          .trip-menu
+            %span.days 2 Days
+            %ul.trip-menu-list
+              %li.trip-menu-item
+                %a.trip-menu-link.trip-menu-link_family{href:"#"}
+                  %span family
+              %li.trip-menu-item
+                %a.trip-menu-link.trip-menu-link_food{href:"#"}
+                  %span foodie
+              %li.trip-menu-item
+                %a.trip-menu-link.trip-menu-link_shop{href:"#"}
+                  %span shopping
+              %li.trip-menu-item
+                %a.trip-menu-link.trip-menu-link_pet{href:"#"}
+                  %span pet frienly
+    <!-- /post-header -->
+
+    <!-- content -->
+    .content.container
+
+      <!-- overview -->
+      .overview
+        .col-xs-12.col-md-5.agent
+          .agent-name
+            %img.agent-photo{src:"img/girl-img.png", alt:""}
+            .agent-name-head
+              %h3 Local Expert
+              %p Audrey Tautou
+              .rating
+                %span.icon-star.rating-star_full
+                %span.icon-star.rating-star_full
+                %span.icon-star.rating-star_full
+                %span.icon-star
+                %span.icon-star
+          .agent-quality
+            .agent-quality-box
+              .agent-quality-balance Buget
+              .progress-box
+                .progress-box_bar{style:"width: 50%"}
+              .agent-quality-balance.text-right Luxury
+            .agent-quality-box
+              .agent-quality-balance Relaxed
+              .progress-box
+                .progress-box_bar{style:"width: 65%"}
+              .agent-quality-balance.text-right Active
+            .agent-quality-box
+              .agent-quality-balance Desolate
+              .progress-box
+                .progress-box_bar{style:"width: 30%"}
+              .agent-quality-balance.text-right Crowdy
+        .col-xs-12.col-md-7
+          .agent-overview#hidden-txt
+            %h3 Overview
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.
+            %p Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus... ut, vehicula eu diam.
+            %p Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+            %p Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus... ut, vehicula eu diam.
+            %ul.skinPlank.dropdown-txt
+               %li.sidebar__item
+                  %a.txt-arrow-block{href:"#"}
+                    %span.txt-arrow
+                  %ul.dropdown-txt
+                    %li Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+      .clearfix
+      <!-- /overview -->
+
+      <!-- accordion -->
+      .col-md-12
+        %ul.calendar.skinPlank
+          %li.travel-block-head.sidebar__item
+            %a.travel-block-item{href:"#"}
+              %span.day Day 1
+              %span.circle-arrow
+            %ul.travel-block-dropdown.clearfix
+              .travel-block-map.left-pos-calendar
+                %img{src:"img/map-accordion.png",alt:"map"}
+              .travel-block.right-pos-calendar
+                %img{src:"img/accordion-img1.png",alt:"map"}
+                .travel-block-content
+                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit
+                  .show-on-map
+                    %a{href:"map.html"} Show on the map
+              .travel-block.left-pos-calendar
+                %img{src:"img/accordion-img2.png",alt:"map"}
+                .travel-block-content
+                  %p Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia
+                  .show-on-map
+                    %a{href:"map.html"} Show on the map
+              .travel-block.right-pos-calendar
+                %img{src:"img/accordion-img3.png",alt:"map"}
+                .travel-block-content
+                  %p Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
+                  .show-on-map
+                    %a{href:"map.html"} Show on the map
+            %li.travel-block-head.sidebar__item
+              %a.accordion-toggle.travel-block-item{href:"#"}
+                %span.day Day 2
+                %span.circle-arrow
+              %ul.travel-block-dropdown.clearfix
+                .travel-block-map.left-pos-calendar
+                  %img{src:"img/map-accordion.png",alt:"map"}
+                .travel-block.right-pos-calendar
+                  %img{src:"img/accordion-img4.png",alt:"map"}
+                  .travel-block-content
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit
+                    .show-on-map
+                      %a{href:"map.html"} Show on the map
+                .travel-block.left-pos-calendar
+                  %img{src:"img/accordion-img5.png",alt:"map"}
+                  .travel-block-content
+                    %p Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia
+                    .show-on-map
+                      %a{href:"map.html"} Show on the map
+            %li.travel-block-head.sidebar__item
+              %a.accordion-toggle.travel-block-item{href:"#"}
+                %span.day Day 3
+                %span.circle-arrow
+              %ul.travel-block-dropdown.clearfix
+                .travel-block-map.left-pos-calendar
+                  %img{src:"img/map-accordion.png",alt:"map"}
+                .travel-block.right-pos-calendar
+                  %img{src:"img/accordion-img6.png",alt:"map"}
+                  .travel-block-content
+                    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit
+                    .show-on-map
+                      %a{href:"map.html"} Show on the map
+                .travel-block.left-pos-calendar
+                  %img{src:"img/accordion-img7.png",alt:"map"}
+                  .travel-block-content
+                    %p Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia
+                    .show-on-map
+                      %a{href:"map.html"} Show on the map
+                .travel-block.right-pos-calendar
+                  %img{src:"img/accordion-img8.png",alt:"map"}
+                  .travel-block-content
+                    %p Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
+                    .show-on-map
+                      %a{href:"map.html"} Show on the map
+                .travel-block.left-pos-calendar
+                  %img{src:"img/accordion-img9.png",alt:"map"}
+                  .travel-block-content
+                    %p Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
+                    .show-on-map
+                      %a{href:"map.html"} Show on the map
+                .travel-block.right-pos-calendar
+                  %img{src:"img/accordion-img10.png",alt:"map"}
+                  .travel-block-content
+                    %p Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
+                    .show-on-map
+                      %a{href:"map.html"} Show on the map
+                .travel-block.left-pos-calendar
+                  %img{src:"img/accordion-img11.png",alt:"map"}
+                  .travel-block-content
+                    %p Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
+                    .show-on-map
+                      %a{href:"map.html"} Show on the map
+      .clearfix
+      <!-- /accordion -->
+      <!-- create contest -->
+      .contest.text-center
+        %img{src:"img/way-map-img.png",alt:"map"}
+        %h2 Love this itinerary?
+        %p Use it to create a new contest and local experts
+        %p will get a better sense of the trip you want
+        .contest-btn-block
+          %a.custom-btn{href:"#"} Create A New contest
+          %a.contest-btn-link{href:"#"} Learn more
+      <!-- /create contest -->
+    <!-- /content -->
+
+    <!-- footer -->
+    %footer
+      .footer-block-links
+        %a.footer-block-links-item{href:"index.html"} Home
+        %a.footer-block-links-item{href:"#"} Itenaries
+        %a.footer-block-links-item{href:"#"} About
+      .footer-block-logo
+        %a.footer-logo-item{href:"index.html"}
+      .footer-share-links
+        %a.footer-share-links-item.share-links-item_fb{href:"#"}
+        %a.footer-share-links-item.share-links-item_tw{href:"#"}
+        %span (c) Wanderist 2014
+    <!-- /footer -->
+
+    .overlay
+    <!-- scripts -->
+    %script{src:"https://code.jquery.com/jquery-2.2.0.min.js"}
+    %script{src:"js/main.js"}
+    <!-- /scripts -->

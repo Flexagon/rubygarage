@@ -1,0 +1,205 @@
+/***** calendar styles *****/
+.calendar {
+  background: $calendar-grey;
+  border: 1px solid $calendar-border;
+  border-radius: 10px;
+  padding: 23px 0 30px;
+  margin: 45px 0;
+}
+.travel-block-head {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.travel-block-item {
+  display: block;
+  background: #000;
+  position: relative;
+  background: $calendar-item-bg;
+  color: $body-txt;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 3px 0;
+  display: block;
+  &::before, &::after {
+    content: '';
+    height: 60px;
+    width: 1px;
+    position: absolute;
+    top: 0;
+  }
+  &::before {
+    background: #fff;
+    left: -1px;
+  }
+  &::after {
+    background: #f5f4e2;
+    right: -1px;
+  }
+  &:hover, &:focus {
+    color: $body-txt;
+    text-decoration: none;
+  }
+  &:hover {
+    .circle-arrow {
+      border: 2px solid #b9e005;
+    }
+  }
+}
+.day {
+  background: $calendar-item-bg;
+  border-top: 2px dashed #e8e7dc;
+  border-bottom: 2px dashed #e8e7dc;
+  display: block;
+  position: relative;
+  padding: 15px 0;
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(../img/shadow.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 10px;
+    bottom: -16px;
+    left: 0;
+  }
+}
+.harOpen {
+  .circle-arrow {
+    &::before {
+      transform: rotate(225deg);
+      top: 10px;
+    }
+  }
+}
+.circle-arrow {
+  position: absolute;
+  top: 15px;
+  right: 60px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 2px solid #fede06;
+  display: block;
+  border-radius: 50%;
+  &::before {
+    content: '';
+    left: 8.49px;
+    top: 7px;
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: .4s;
+  }
+}
+.travel-block-dropdown {
+    padding: 3% 8%;
+    text-align: left;
+    background: $calendar-grey;
+}
+.travel-block, .travel-block-map {
+  max-width: 340px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  img {
+    width: 100%;
+  }
+}
+.travel-block-map {
+  position: relative;
+  &::before {
+    content: '';
+    background: $sprite;
+    @include inline-block;
+    background-position: -110px 0;
+    width: 26px;
+    height: 40px;
+    position: absolute;
+    left: 107px;
+    top: 33px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 115px;
+    top: 40px;
+    width: 12px;
+    height: 12px;
+    background: #3d380a;
+    border-radius: 50%;
+  }
+}
+.travel-block {
+  background: $white;
+}
+.travel-block-content {
+  border-radius: 0 0 10px 10px;
+  p {
+    padding: 17px 20px;
+    margin: 0;
+    font-size: 14px;
+  }
+  .show-on-map {
+    position: relative;
+    z-index: 2;
+    padding: 3px 0;
+    background: $calendar-item-bg;
+    position: relative;
+    margin-bottom: 15px;
+    &::after {
+      content: "";
+      position: absolute;
+      background: url(../img/shadow.png) no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 10px;
+      bottom: -10px;
+      left: 0;
+    }
+    a {
+      text-decoration: none;
+      border-top: 1px dashed #e8e7dc;
+      border-bottom: 1px dashed #e8e7dc;
+      display: block;
+      padding: 6px 23px;
+      color: $show-on-map;
+      &::before {
+        content: '';
+        background: $sprite;
+        background-position: -100px 0;
+        width: 10px;
+        height: 15px;
+        @include inline-block;
+        margin-right: 7px;
+        position: relative;
+        top: -1px;
+      }
+      &::after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        background-color: #3d380a;
+        position: absolute;
+        left: 25.2px;
+        top: 15px;
+        border-radius: 50%;
+      }
+      &:hover {
+        color: $body-txt;
+      }
+    }
+  }
+}
+.left-pos-calendar {
+  float: left;
+}
+.right-pos-calendar {
+  float: right;
+}
+/***** /calendar styles *****/

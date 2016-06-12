@@ -1,0 +1,162 @@
+@media (max-width: 991px) {
+  .overview {
+    .agent {
+      margin-bottom: 30px;
+    }
+  }
+  .left-pos-calendar {
+    float: right;
+  }
+  .day {
+    &::after {
+      background-size: contain;
+    }
+  }
+}
+@media (max-width: 768px ) {
+  .push {
+    position: fixed;
+    top: 0;
+  }
+  .sidebar-open {
+    left: 0 !important;
+  }
+  .sidebar-open {
+    .button-menu {
+      left: 270px;
+      transition: .4s;
+    }
+  }
+}
+@media (max-width: 666px) {
+  header {
+    .share-links {
+      display: none;
+    }
+  }
+  .header-gallery-block {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .navblock-links-item {
+    border-right: none;
+  }
+
+  .gallery {
+    .share-links {
+      display: block;
+    }
+  }
+  .trip-menu {
+    .trip-menu-item {
+      padding: 0 10px;
+    }
+  }
+
+
+  .trip-menu-link {
+    span {
+      display: none;
+    }
+  }
+  footer {
+    min-height: 75px;
+  }
+  .footer-block-links {
+    a {
+      display: block;
+    }
+  }
+  .footer-share-links {
+    .share-links-item_fb {
+      font-size: 20px;
+    }
+    .share-links-item_tw {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 614px) {
+  .open {
+    .handle {
+      right: 0 !important;
+        border-radius: 10px 0 0 10px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .map-sidebar {
+    width: 100%;
+  }
+}
+@media (max-width: 410px) {
+  .navblock-links-item_glass {
+    width: 140px;
+  }
+  .navblock-links-item_map {
+    width: 110px;
+  }
+  .header-gallery-block {
+    .itinerary {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 35px;
+    }
+  }
+
+  .contest-btn-link {
+    display: none !important;
+  }
+  .mark-info .mark-map {
+    left: 100px;
+    right: 3%;
+  }
+}
+@media (max-width: 380px) {
+  .travel-time {
+    span {
+      display: none;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .navblock-links-item_glass, .navblock-links-item_map {
+    &::before {
+      width: 0;
+    }
+  }
+  .navblock-links-item_glass {
+    width: 123px;
+  }
+  .header-gallery-block h1 {
+    font-size: 30px;
+  }
+  .header-gallery-block .itinerary {
+    font-size: 13px;
+  }
+  .trip-menu .days {
+    font-size: 16px;
+  }
+  .trip-menu-list {
+    padding-left: 10px;
+  }
+  .agent-quality-box .progress-box {
+    width: 48%;
+  }
+  .circle-arrow {
+    right: 30px;
+  }
+  .sidebar {
+    left: -300px;
+    width: 300px;
+  }
+  .push {
+    left: 0;
+  }
+  .sidebar-open .button-menu {
+    left: 230px;
+  }
+}

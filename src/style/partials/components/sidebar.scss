@@ -1,0 +1,202 @@
+/***** Sidebar styles *****/
+.sidebar {
+  background: $sidebar-bg;
+  overflow-y: scroll;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: -340px;
+  width: 340px;
+  height: 100%;
+  &::-webkit-scrollbar{width: 10px;}
+  &::-webkit-scrollbar-thumb{background-color:rgb(108, 96, 68);border-radius: 10px;padding: 2px;}
+  &::-webkit-scrollbar-track{background-color:rgb(74, 65, 47);}
+  transition: all .4s ease-in-out;
+}
+
+.sidebar-close, .push {
+  left: 0;
+  transition: all .4s ease-in-out;
+}
+.sidebar-open {
+  left: 340px !important;
+  transition: all .4s ease-in-out;
+}
+.logo-menu {
+  width: 100%;
+  background: $logo-bg;
+  a {
+    display: block;
+    padding: 16.8px 40px;
+  }
+}
+.sidebar-list {
+  background: #4d4232;
+  background: -moz-linear-gradient(top,  #4d4232 0%, #776845 100%);
+  background: -webkit-linear-gradient(top,  #4d4232 0%,#776845 100%);
+  background: linear-gradient(to bottom,  #4d4232 0%,#776845 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d4232', endColorstr='#776845',GradientType=0 );
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  .sidebar-item {
+    border-bottom: 1px solid $link-border;
+    position: relative;
+  }
+  .sidebar-link {
+    @include inline-block;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #c9c4bb;
+  }
+}
+.count-mail {
+  position: absolute;
+  top: 22px;
+  right: 25px;
+  background-color: $count-bg;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 0px 6px;
+}
+.sidebar-link_boing,
+.sidebar-link_messages,
+.sidebar-link_sert {
+  &::before {
+    content: '';
+    background: $sprite;
+    @include inline-block;
+    margin-right: 40px;
+  }
+}
+.sidebar-link_boing {
+  &::before {
+    background-position: -505px 0;
+    width: 26px;
+    height: 26px;
+  }
+}
+.sidebar-link_messages {
+  &::before {
+    background-position: -74px 0;
+    width: 26px;
+    height: 20px;
+  }
+}
+.sidebar-link_sert {
+  &::before {
+    background-position: -25px 0;
+    width: 24px;
+    height: 26px;
+  }
+}
+.sidebar-item_john {
+  img {
+    @include inline-block;
+    margin-left: 40px;
+  }
+  span {
+    padding: 30px 25px !important;
+    font-size: 16px !important;
+  }
+}
+.login-list {
+  list-style: none;
+  padding: 0 50px;
+}
+.login-link {
+  color: $log-link-color;
+  padding: 0 10px 22px 0;
+  @include inline-block;
+  &:hover {
+    color: $log-link-color;
+  }
+}
+.login-link_boing,
+.login-link_pay,
+.login-link_sert,
+.login-link_set,
+.login-link_log {
+  &:before {
+    content: '';
+    background: $sprite;
+    @include inline-block;
+    margin-right: 43px;
+  }
+}
+.login-link_boing {
+  &::before {
+    background-position: -493px 0;
+    width: 12px;
+    height: 11px;
+  }
+}
+.login-link_pay {
+  &::before {
+    background-position: -62px 0;
+    width: 12px;
+    height: 12px;
+  }
+}
+.login-link_sert {
+  &::before {
+    background-position: -13px 0;
+    width: 12px;
+    height: 12px;
+  }
+}
+.login-link_set {
+  &::before {
+    background-position: 0 0;
+    width: 13px;
+    height: 12px;
+  }
+}
+.login-link_log {
+  &::before {
+    background-position: -156px 0;
+    width: 12px;
+    height: 12px;
+  }
+}
+.mail-list {
+  background: $sidebar-bg;
+  padding: 0;
+
+}
+.mail-list-item {
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid #5f543d;
+  ul, li {
+    list-style: none;
+  }
+  ul {
+    h4 {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 20px 0;
+      margin: 0;
+    }
+    li {
+      position: relative;
+    }
+  }
+  .mail-list-link {
+    color: #a1a094;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 10px 10px 0;
+    display: block;
+    span {
+      position: absolute;
+      font-size: 13px;
+      color: $count-bg;
+      right: 10px;
+      top: 10px;
+    }
+  }
+}
+/***** /Sidebar styles *****/

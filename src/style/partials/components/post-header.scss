@@ -1,0 +1,92 @@
+/***** Post-header styles *****/
+.gallery {
+  background: url(../img/post-header-bg.png);
+  height: 420px;
+  color: $white;
+  position: relative;
+  a {
+    color: $white;
+  }
+  .share-links {
+    display: none;
+    span, a {
+      color: $white;
+      @include inline-block;
+    }
+  }
+}
+.header-gallery-block {
+  position: absolute;
+  bottom: 23px;
+  .itinerary {
+    font-size: 16px;
+    text-shadow: $gal-text-shadow;
+  }
+  h1 {
+    text-shadow: $gal-text-shadow;
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+}
+.trip-menu {
+  .days, ul, li {
+    @include inline-block;
+    margin-bottom: 0;
+  }
+  .days {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-shadow: $gal-text-shadow;
+  }
+  .trip-menu-item {
+    padding: 0 20px;
+    border-right: 1px solid $trip-border;
+    &:last-child {
+      border-right: none;
+    }
+    span {
+      font-size: 16px;
+      font-weight: 300;
+      text-shadow: $gal-text-shadow;
+    }
+  }
+  .trip-menu-link_pet,
+  .trip-menu-link_shop,
+  .trip-menu-link_food,
+  .trip-menu-link_family {
+    &::before {
+      content: '';
+      background: $sprite;
+      @include inline-block;
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+  .trip-menu-link_pet {
+    &::before {
+      background-position: -364px 0;
+      width: 20px;
+    }
+  }
+  .trip-menu-link_shop {
+    &::before {
+      background-position: -416px 0;
+      width: 22px;
+    }
+  }
+  .trip-menu-link_food {
+    &::before {
+      background-position: -317px 0;
+      width: 13px;
+    }
+  }
+  .trip-menu-link_family {
+    &::before {
+      background-position: -341px 0;
+      width: 23px;
+    }
+  }
+}
+/***** /Post-header styles *****/

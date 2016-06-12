@@ -1,0 +1,108 @@
+/***** COLORS *****/
+$border-head: #bba77b;
+$white: #fff;
+$body-txt: #3d380a;
+$head-brown: #c8b485;
+$head-right: #453c25;
+$head-active: #d2c29a;
+$burger-color: #453c25;
+$head-item-active: #fafaf2;
+$star-full: #eed002;
+$star-empty: #d9d8c3;
+$progress-green: #b9e005;
+$calendar-grey: #f5f4e2;
+$footer-brown: #453c25;
+/***** /COLORS *****/
+
+/***** Sidebar COLORS *****/
+$logo-bg: #4c412e;
+$link-border: #453c25;
+$link-color: #c9c4bb;
+$log-link-color: #a39b8b;
+$count-bg: #ffdf06;
+$sidebar-bg: #5a503a;
+/***** /Sidebar COLORS *****/
+
+/***** Post-header COLORS *****/
+$gal-text-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+$trip-border: #6aa7a8;
+/***** /Post-header COLORS *****/
+
+/***** overview COLORS *****/
+$border-progress: #dfdcb0;
+$txt-arrow: #2158d5;
+/***** /overview COLORS *****/
+
+/***** calendar COLORS *****/
+$calendar-border: #e4e3d2;
+$calendar-item-bg: linear-gradient(to right, white 0%, #f5f4e2 100%);
+$travel-block-border: #dcdbcb;
+$show-on-map: #ec4b36;
+/***** /calendar COLORS *****/
+
+/***** contest COLORS *****/
+$button-normal: #ffdf06;
+$button-hover-focus: #ffe534;
+$button-shadow-normal: 0 2px 0 #dfc40a;
+$button-shadow-focus: inset 0 2px 0 #dfc40a;
+/***** /contest COLORS *****/
+
+/***** footer COLORS *****/
+$footer-hover: #ffdf06;
+$copywright-color: #796b46;
+/***** /footer COLORS *****/
+
+/***** map COLORS *****/
+$handle-arrow: #111;
+$map-tabs: #ffdf06;
+/***** /map COLORS *****/
+
+$sprite: url(../img/sprite-main.png);
+
+@mixin inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+@mixin flexbox-between {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flexbox-around {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin flex-vertical {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+}
+@mixin menu-hover {
+  color: $body-txt;
+  text-decoration: none;
+  background: $head-active;
+  font-weight: 700;
+}
+@mixin transition-button {
+  -webkit-transition: box-shadow .3s ease-in-out, background .3s ease-in-out;
+  -moz-transition: box-shadow .3s ease-in-out, background .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out, background .3s ease-in-out;
+}
+@mixin button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
