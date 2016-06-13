@@ -4,8 +4,10 @@
       margin-bottom: 30px;
     }
   }
-  .left-pos-calendar {
-    float: right;
+  .left-pos-calendar,
+  .right-pos-calendar {
+    float: none;
+    margin: 20px auto;
   }
   .day {
     &::after {

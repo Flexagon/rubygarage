@@ -11,6 +11,7 @@
 .map-sidebar {
 	width: 560px;
   height: 84%;
+  z-index: 3;
 }
 .map-sidebar-box {
 	width: 100%;
@@ -237,6 +238,7 @@
   }
 }
 .mark-info {
+  z-index: 1;
   position: absolute;
   bottom: 200px;
   right: 10%;
