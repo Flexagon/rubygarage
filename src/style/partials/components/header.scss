@@ -105,8 +105,10 @@ header {
   text-align: center;
   border-right: 1px solid $border-head;
   @include inline-block;
-  &:hover {
+  &:hover, &:focus {
     @include menu-hover;
+    text-decoration: none;
+    color: $body-txt;
   }
 }
 
